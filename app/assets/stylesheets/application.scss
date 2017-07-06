@@ -13,13 +13,19 @@
  *= require_tree .
  *= require_self
  */
-
+//Import bootstrap
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Import font awesome
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+// Header styles
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
+//Background gradient
 .navbar, .home-callout {
     //Gradient provided by @_ighosh at uiGradients.com
     background: #3a7bd5;  /* fallback for old browsers */
@@ -29,15 +35,20 @@ h1, h2, h3 {
 .navbar {
     border: none;
 }
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+//Change color to white
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a{
     color: white;
+    &:hover {
+        color: white;
+        opacity: 0.75;
+    }
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    opacity: 0.75;
-}
+//Get rid of white space on home page
 .home-callout {
     margin-top: -20px;
     padding-top: 50px;
