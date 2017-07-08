@@ -2,7 +2,7 @@
 /* global Stripe */
 $(document).on('turbolinks:load',function(){
   var form = $('#pro_form'),
-  button = $('#form-submit-btn');
+  button = $('#form-signup-btn');
   //Set Stripe public key
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
   
@@ -14,8 +14,8 @@ $(document).on('turbolinks:load',function(){
     // Collect credit card info
     var ccNum = $('#card_number').val(),
     cvcNum = $('#card_code').val(),
-    expMonth = $('#card_month'),
-    expYear = $('#card_year');
+    expMonth = $('#card_month').val(),
+    expYear = $('#card_year').val();
     
     // Validate the info using Stripe
     var error = false;
