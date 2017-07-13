@@ -1,3 +1,8 @@
 # README
+Welcome to DevMatch!
+A membership site where entrepreneurs can meet developers
 
-[Upskill](http://upskillcourses.com) Software-as-a-Service Ruby on Rails App
+Developed by Kyle Grondin
+
+
+[Upskill](http://upskillcourses.com) Created this website by following the Ruby on Rails tutorial here
